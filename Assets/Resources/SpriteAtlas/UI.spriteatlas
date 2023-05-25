@@ -1,0 +1,113 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: UI
+  m_EditorData:
+    serializedVersion: 2
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 0
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - serializedVersion: 3
+      m_BuildTarget: Android
+      m_MaxTextureSize: 1024
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 47
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+      m_ForceMaximumCompressionQuality_BC6H_BC7: 0
+    packingSettings:
+      serializedVersion: 2
+      padding: 4
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 0
+      enableTightPacking: 0
+    secondaryTextureSettings: {}
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 29f6c6f31aa871a4884fc26a0e84a270, type: 3}
+    bindAsDefault: 1
+    isAtlasV2: 0
+    cachedData: {fileID: 0}
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: aeb4f840b0079834b8a1e00d308dcb2a, type: 3}
+  - {fileID: 21300000, guid: 547112f0cfce12c489c8b1599a11bcd1, type: 3}
+  - {fileID: 21300000, guid: 44568f0188212e8458b2d919dd70d601, type: 3}
+  - {fileID: 21300000, guid: cbdfe03156eb8c542a7218c07aa5bc1d, type: 3}
+  - {fileID: 21300000, guid: b2c9be22687720347bbd13ba1ccd4c73, type: 3}
+  - {fileID: 21300000, guid: ddbd79c2d9f9cc94680e190c11796b8b, type: 3}
+  - {fileID: 21300000, guid: 4d957583fc4de5b4c86be6c4c6d3552b, type: 3}
+  - {fileID: 21300000, guid: 6f2d1c84768b18f46913c22e95348ecd, type: 3}
+  - {fileID: 21300000, guid: 1d706b255a5d0ad46ad2393652173e90, type: 3}
+  - {fileID: 21300000, guid: f24294652102deb46964284487d27a7a, type: 3}
+  - {fileID: 21300000, guid: 1272a036330fd6d40a54946fe1ca76e9, type: 3}
+  - {fileID: 21300000, guid: bf9105660c7e1c04d924ba2afd1993fb, type: 3}
+  - {fileID: 21300000, guid: 26a7e3f677d670b4281bc80020839696, type: 3}
+  - {fileID: 21300000, guid: 62da95573f322a847b2fc5bbda19dfca, type: 3}
+  - {fileID: 21300000, guid: 16f8fbf7729c5c343ab0b49311536839, type: 3}
+  - {fileID: 21300000, guid: 53426868254b78d4f9b4826ebf3f1dad, type: 3}
+  - {fileID: 21300000, guid: 75901588e46f98e49b4131d86b2d491a, type: 3}
+  - {fileID: 21300000, guid: b8df18a895b653b4db31b18be9bb19aa, type: 3}
+  - {fileID: 21300000, guid: 1a4106e8975e7d24ab35bada8142c1ab, type: 3}
+  - {fileID: 21300000, guid: 4f284a794a5f93e4aa7ef39ed3998310, type: 3}
+  - {fileID: 21300000, guid: dde8fa8965ca35344850296d0fea7894, type: 3}
+  - {fileID: 21300000, guid: 3b7ccaca117794b4080bfc13d28078ae, type: 3}
+  - {fileID: 21300000, guid: efe2c0dae6d959f44a7ab5d100fd302e, type: 3}
+  - {fileID: 21300000, guid: fe50a84cb2e647444bc8564a25c0cdf0, type: 3}
+  - {fileID: 21300000, guid: 2b33e98c258610e4eb1591a276193fa8, type: 3}
+  - {fileID: 21300000, guid: 2d2871cc13d262044bec9ce1992df33e, type: 3}
+  - {fileID: 21300000, guid: 85c6357d235edc64686e3b7ba4f602a1, type: 3}
+  - {fileID: 21300000, guid: 9410200ef366125418f36855af071221, type: 3}
+  - {fileID: 21300000, guid: af0657ef9bcfe574dad86180f295d303, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - Track_Preview_Test_3
+  - tractorPolice
+  - UI_Panel
+  - UI_Button_Normal
+  - hatchbackSports
+  - delivery
+  - police
+  - suvLuxury
+  - Particle Circle
+  - tractorShovel
+  - garbageTruck
+  - taxi
+  - Track_Preview_Test_2
+  - suv
+  - firetruck
+  - raceFuture
+  - Track_Preview_Test_1
+  - UI_Button_Pressed
+  - truck
+  - UI_Button_Return
+  - race
+  - sedanSports
+  - truckFlat
+  - UI_Button_Hover-Selected
+  - van
+  - ambulance
+  - sedan
+  - deliveryFlat
+  - tractor
+  m_RenderDataMap: {}
+  m_Tag: UI
+  m_IsVariant: 0
