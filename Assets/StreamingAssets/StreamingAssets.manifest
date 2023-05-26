@@ -1,0 +1,7 @@
+ManifestFileVersion: 0
+CRC: 343480759
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: carmod
+      Dependencies: {}

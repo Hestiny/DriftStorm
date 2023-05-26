@@ -1,0 +1,56 @@
+ManifestFileVersion: 0
+CRC: 324128197
+Hashes:
+  AssetFileHash:
+    serializedVersion: 2
+    Hash: 9b8913265a679f816972f36c12cb6eb5
+  TypeTreeHash:
+    serializedVersion: 2
+    Hash: f64856a3d606b613608cbf22df470c60
+HashAppended: 0
+ClassTypes:
+- Class: 1
+  Script: {instanceID: 0}
+- Class: 4
+  Script: {instanceID: 0}
+- Class: 21
+  Script: {instanceID: 0}
+- Class: 23
+  Script: {instanceID: 0}
+- Class: 33
+  Script: {instanceID: 0}
+- Class: 43
+  Script: {instanceID: 0}
+- Class: 48
+  Script: {instanceID: 0}
+SerializeReferenceClassIdentifiers: []
+Assets:
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/wheelTruck.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/tractorShovel.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/van.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/wheelTractorFront.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/raceFuture.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/tractor.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/wheelDark.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/deliveryFlat.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/tractorPolice.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/sedan.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/truck.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/wheelTractorBack.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/ambulance.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/police.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/firetruck.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/delivery.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/wheelTractorDarkBack.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/race.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/suv.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/wheelDefault.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/sedanSports.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/truckFlat.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/garbageTruck.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/wheelRacing.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/hatchbackSports.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/suvLuxury.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/taxi.fbx
+- Assets/Udemy Racer Assets/Models/Kenney/Car Kit/wheelTractorDarkFront.fbx
+Dependencies: []
