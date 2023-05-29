@@ -19,6 +19,8 @@ namespace UIFramework
                 WinGroup = group;
             }
         }
+
+        public static Transform Root;
         public static Transform UIContent;
         public static Transform UILayer;
         public static UIPanel CurrentWin;
@@ -28,6 +30,7 @@ namespace UIFramework
         public static Dictionary<string, WinVariable> WindowResPath = new Dictionary<string, WinVariable>()
         {
             { typeof(MainWindow).Name,new WinVariable(UIPrefabPath.MainWindow,UIGroupEnum.Main ) },
+            { typeof(LoadingWindow).Name,new WinVariable(UIPrefabPath.LoadingWindow,UIGroupEnum.PopPu ) },
         };
 
         // 弹框列表
@@ -38,7 +41,7 @@ namespace UIFramework
 
         public static void Init()
         {
-            var Root = GameObject.Find("Root").transform;
+            Root = GameObject.Find("Root").transform;
             UILayer = GameObject.Find("Root/UILayer").transform;
             UIContent = UILayer.Find("UICanvas/UIContent");
             UICamera = GameObject.Find("Root/UILayer/UICamera").GetComponent<Camera>();
@@ -111,9 +114,44 @@ namespace UIFramework
             return win;
         }
 
+        private static T GeneratePanel<T>(Transform target = null) where T : UIWIndow
+        {
+            if (target == null)
+            {
+                target = UIContent;
+            }
+            if (!WindowResPath.TryGetValue(typeof(T).Name, out var winVariable))
+            {
+                Debug.LogError(typeof(T).Name + " 该窗体没有设置预制体路径WindowResPath");
+                return default(T);
+            }
+            target = GetGroupNode(winVariable.WinGroup);
+            var winObj = Resources.Load<GameObject>(winVariable.ResPath);
+            var win = UnityEngine.Object.Instantiate(winObj, target).GetComponent<T>();
+            if (win == null)
+            {
+                Debug.LogError(string.Format("Component [{0}] not find.", typeof(T).Name));
+            }
+            if (WindowList.TryGetValue(typeof(T), out var winList))
+            {
+                winList.Add(win);
+            }
+            else
+            {
+                WindowList.Add(typeof(T), new List<UIPanel> { win });
+            }
+            win.Open();
+            return win;
+        }
+
         public static T OpenWindow<T, H>(H? pram = null) where T : UIWIndow where H : struct
         {
             return GeneratePanel<T, H>(pram);
+        }
+
+        public static T OpenWindow<T>() where T : UIWIndow
+        {
+            return GeneratePanel<T>();
         }
 
         public static void CloseWindow<T>() where T : UIPanel

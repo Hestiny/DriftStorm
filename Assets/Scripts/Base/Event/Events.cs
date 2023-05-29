@@ -5,6 +5,17 @@ public interface IBaseEventStruct
     EnumEventType GetEventType();
 }
 
+/// <summary>
+/// 开始游戏
+/// </summary>
+public struct StartGameEventPram : IBaseEventStruct
+{
+    public EnumEventType GetEventType()
+    {
+        return EnumEventType.StartGameEventPram;
+    }
+}
+
 public struct TestEventPram : IBaseEventStruct
 {
     public int param1;
@@ -41,7 +52,8 @@ public enum EnumEventType
     TestEvebtPram,
     SpritePram,
     trackSpritePram,
-    EventTypeEnd
+    EventTypeEnd,
+    StartGameEventPram,
 }
 
 [System.Serializable]

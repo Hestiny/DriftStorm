@@ -8,6 +8,7 @@ namespace DriftStorm
     {
         private void Awake()
         {
+            AssetBundleCtrl.Instance.InitMainAb();
             LoadCtrl.Instance.Init();
             DataCtrl.Instance.Init();
             UICtrl.Init();
@@ -15,8 +16,12 @@ namespace DriftStorm
 
         void Start()
         {
-            UICtrl.OpenWindow<MainWindow, MainWindow.WindowParam>();
+            UICtrl.OpenWindow<LoadingWindow>();
+            UICtrl.OpenWindow<MainWindow>();
             ScenceCtrl.Instance.LoadSceneAsync(GameConfig.TrackGrass, UnityEngine.SceneManagement.LoadSceneMode.Single, null);
+            var obj = LoadCtrl.Instance.Load<GameObject>("sedanSports", UICtrl.Root);
+            //var prefab = Instantiate(obj);
+            //prefab.transform.position = default;
         }
 
         void Update()

@@ -14,5 +14,6 @@ namespace UIFramework
         private static readonly string UI_ROOT = "Prefabs/UI/";
 
         public static readonly string MainWindow = UI_ROOT + "MainWindow";
+        public static readonly string LoadingWindow = UI_ROOT + "LoadingWindow";
     }
 }

@@ -8,7 +8,7 @@ using UnityEngine.UI;
 public class MainWindow : UIWIndow
 {
     [SerializeField]
-    Button CloseBtn;
+    Button _quiteBtn;
     public GameObject raceSetupPanel, trackSelectPanel, racerSelectPanel;
     public Image trackSelectImage, racerSelectImage;
 
@@ -19,7 +19,7 @@ public class MainWindow : UIWIndow
 
     public override void OnAwake()
     {
-        buttonClickActionMap.Add(CloseBtn, QuitGame);
+        buttonClickActionMap.Add(_quiteBtn, QuitGame);
         //buttonClickActionMap.Add(_btn1, Btn1Click);
         EventDispatcher.AddListener(typeof(TestEventPram).Name, EventTestLog);
         EventDispatcher.AddListener(typeof(SpritePram).Name, ChangeImage);
@@ -41,7 +41,6 @@ public class MainWindow : UIWIndow
 
     public void StartGame()
     {
-      
         ToCloseWindow();
     }
 

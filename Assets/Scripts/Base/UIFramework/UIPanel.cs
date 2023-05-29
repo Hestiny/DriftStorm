@@ -45,6 +45,7 @@ public abstract class UIPanel : MonoBehaviour
         BeforeShow();
         IsActive = true;
         StopCoroutine("DelayDestroy");
+        Show();
     }
 
     public virtual void BeforeShow()

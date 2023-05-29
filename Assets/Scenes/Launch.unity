@@ -165,9 +165,8 @@ Transform:
   m_Children:
   - {fileID: 1607776860}
   - {fileID: 472351104}
-  - {fileID: 856545605}
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &288117634
 GameObject:
@@ -276,7 +275,7 @@ GameObject:
   m_Component:
   - component: {fileID: 494090784}
   - component: {fileID: 494090783}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UICamera
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -335,7 +334,7 @@ RectTransform:
   m_GameObject: {fileID: 494090782}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.00925926, y: 0.00925926, z: 0.00925926}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 1607776860}
   m_RootOrder: 0
@@ -435,8 +434,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 260390658}
-  m_RootOrder: 2
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &1599819379
 GameObject:
@@ -547,7 +546,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1607776860}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UILayer
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -582,7 +581,7 @@ GameObject:
   - component: {fileID: 1628765054}
   - component: {fileID: 1628765053}
   - component: {fileID: 1628765052}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UICanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -666,7 +665,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_AdditionalShaderChannelsFlag: 0
+  m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
@@ -679,7 +678,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2007193932}
-  m_Layer: 0
+  m_Layer: 5
   m_Name: UIContent
   m_TagString: Untagged
   m_Icon: {fileID: 0}
