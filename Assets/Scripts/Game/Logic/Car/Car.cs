@@ -32,7 +32,11 @@ namespace DriftStorm
         [SerializeField]
         private float reverseAccel = 4f;
         [SerializeField]
-        private float turnStrength = 180f;
+        private float turnStrength = 150f;
+
+        [Header("重心")]
+        [SerializeField]
+        private Transform _centerOfMass;
 
 
         private Transform _wheelBackLeft;
@@ -44,21 +48,7 @@ namespace DriftStorm
         {
             _theRg = transform.GetComponent<Rigidbody>();
             _modeParent = transform.Find("modeParent");
-        }
-
-        private void Update()
-        {
-            if (Input.GetAxis("Vertical") > 0)
-            {
-                _speedInput = Input.GetAxis("Vertical") * forwardAccel;
-            }
-            else if (Input.GetAxis("Vertical") < 0)
-            {
-                _speedInput = Input.GetAxis("Vertical") * reverseAccel;
-            }
-
-            _turnInput = Input.GetAxis("Horizontal");
-
+            _theRg.centerOfMass = transform.InverseTransformPoint(_centerOfMass.position);
         }
 
         private void FixedUpdate()
@@ -149,11 +139,32 @@ namespace DriftStorm
         /// </summary>
         private void Run()
         {
-            if (SpeedInput != 0)
+            //if (SpeedInput != 0)
             {
-                _theRg.AddForce(transform.forward * _speedInput * 1000f);
+                var force = transform.forward * _speedInput * 1000f;
+                _theRg.AddForce(force);
+                //DebugCtrl.Log($"{force.x} {force.y} {force.z}", Color.green);
+                //_theRg.velocity = transform.forward * _speedInput * 5f * Time.deltaTime;
 
-                transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, _turnInput * turnStrength * Time.deltaTime * Mathf.Sign(_speedInput) * (_theRg.velocity.magnitude / maxSpeed), 0f));
+                //Quaternion turnAngle = Quaternion.AngleAxis(_turnInput * turnStrength, transform.up);
+                //Vector3 fwd = turnAngle * transform.forward;
+
+                //Vector3 newVelocity = transform.forward * _speedInput * 5f;
+                //newVelocity.y = _theRg.velocity.y;
+                //_theRg.velocity = newVelocity;
+
+                _theRg.AddTorque(transform.up * _turnInput * 5f * 1000f);
+
+                //var angularVel = _theRg.angularVelocity;
+
+                //// move the Y angular velocity towards our target
+                //angularVel.y = Mathf.MoveTowards(angularVel.y, _turnInput * turnStrength, Time.fixedDeltaTime * turnStrength * Mathf.Sign(_speedInput) * (_theRg.velocity.magnitude / maxSpeed));
+
+                //// apply the angular velocity
+                //_theRg.angularVelocity = angularVel;
+
+                //_theRg.angularVelocity = _theRg.angularVelocity + new Vector3(0f, _turnInput * turnStrength * Time.deltaTime * Mathf.Sign(_speedInput) * (_theRg.velocity.magnitude / maxSpeed), 0f);
+                //transform.rotation = Quaternion.Euler(transform.rotation.eulerAngles + new Vector3(0f, _turnInput * turnStrength * Time.deltaTime * Mathf.Sign(_speedInput) * (_theRg.velocity.magnitude / maxSpeed), 0f));
             }
 
         }
@@ -163,7 +174,7 @@ namespace DriftStorm
         private float _speedInput;
         private float _turnInput;
 
-        public float SpeedInput { get => _speedInput; set => _speedInput = value; }
+        public float SpeedInput { get => _speedInput; set => _speedInput = value > 0 ? value * forwardAccel : value * reverseAccel; }
         public float TurnInput { get => _turnInput; set => _turnInput = value; }
         #endregion
     }
