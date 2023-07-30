@@ -53,53 +53,53 @@
     <UnityVersion>2020.3.33f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="D:\Program\Microsoft\VS\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="D:\Program\Microsoft\MicrosoftVisualStudio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\DataReloadHandler.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\BlendModeMaterialsUtility.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineEditorUtilities.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRootMotionInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Asset Types\AnimationReferenceAssetEditor.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonMecanimRootMotionInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SpinePreferences.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Asset Types\SpineAtlasAssetInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineMaskUtilities.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineInspectorUtility.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonDebugWindow.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\AssetUtility.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\SpineAttributeDrawers.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonUtilityInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonPartsRendererInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRendererCustomMaterialsInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\BoundingBoxFollowerInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonAnimationInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonBakingWindow.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\DataReloadHandler.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\BlendModeMaterialsUtility.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRootMotionInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonDebugWindow.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\AssetUtility.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Shaders\SpineShaderWithOutlineGUI.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonBaker.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Modules\SlotBlendModes\Editor\SlotBlendModesEditor.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\Instantiation.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonGraphicInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonGraphicCustomMaterialsInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\AssetDatabaseAvailabilityDetector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Asset Types\SpineSpriteAtlasAssetInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonRenderSeparatorInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\SpineAttributeDrawers.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Asset Types\SkeletonDataAssetInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\BoneFollowerInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRootMotionBaseInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineEditorUtilities.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Asset Types\AnimationReferenceAssetEditor.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonMecanimInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\Icons.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonUtilityBoneInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Asset Types\SkeletonDataAssetInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\BuildSettings.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Menus.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SpriteAtlasImportWindow.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineHandles.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\BoneFollowerGraphicInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRendererInspector.cs" />
+    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonAnimationInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\Preferences.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonGraphicCustomMaterialsInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\BoundingBoxFollowerGraphicInspector.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\PointFollowerInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SpinePreferences.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\BuildSettings.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonBaker.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Modules\SlotBlendModes\Editor\SlotBlendModesEditor.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SkeletonBakingWindow.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\AssetDatabaseAvailabilityDetector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\BoneFollowerInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\BoneFollowerGraphicInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Asset Types\SpineAtlasAssetInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Menus.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRootMotionBaseInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineMaskUtilities.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Asset Types\SpineSpriteAtlasAssetInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\Instantiation.cs" />
     <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Shaders\SpineSpriteShaderGUI.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Windows\SpriteAtlasImportWindow.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Modules\SkeletonRenderSeparator\Editor\SkeletonRenderSeparatorInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonGraphicInspector.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Utility\SpineHandles.cs" />
-    <Compile Include="Assets\Spine\Editor\spine-unity\Editor\Components\SkeletonRendererInspector.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Spine\Editor\spine-unity-editor.asmdef" />
@@ -340,14 +340,17 @@
     <Reference Include="UnityEditor.WindowsStandalone.Extensions">
       <HintPath>D:\Program\Unity\Unity 2020.3.33f1\Editor\Data\PlaybackEngines\WindowsStandaloneSupport\UnityEditor.WindowsStandalone.Extensions.dll</HintPath>
     </Reference>
-    <Reference Include="SyntaxTree.VisualStudio.Unity.Bridge">
-      <HintPath>C:\Program Files (x86)\Microsoft Visual Studio Tools for Unity\16.0\Editor\SyntaxTree.VisualStudio.Unity.Bridge.dll</HintPath>
-    </Reference>
     <Reference Include="Unity.Plastic.Newtonsoft.Json">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="DemiLib">
       <HintPath>Assets\Plugins\Demigiant\DemiLib\Core\DemiLib.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OOXML">
+      <HintPath>Assets\Editor\NPOI.2.2.1\lib\net40\NPOI.OOXML.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI">
+      <HintPath>Assets\Editor\NPOI.2.2.1\lib\net40\NPOI.dll</HintPath>
     </Reference>
     <Reference Include="Unity.Plastic.Antlr3.Runtime">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\Unity.Plastic.Antlr3.Runtime.dll</HintPath>
@@ -364,11 +367,17 @@
     <Reference Include="DemiEditor">
       <HintPath>Assets\Plugins\Demigiant\DemiLib\Core\Editor\DemiEditor.dll</HintPath>
     </Reference>
+    <Reference Include="NPOI.OpenXml4Net">
+      <HintPath>Assets\Editor\NPOI.2.2.1\lib\net40\NPOI.OpenXml4Net.dll</HintPath>
+    </Reference>
     <Reference Include="log4netPlastic">
       <HintPath>Library\PackageCache\com.unity.collab-proxy@1.15.15\Lib\Editor\PlasticSCM\log4netPlastic.dll</HintPath>
     </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets\Plugins\Demigiant\DOTween\DOTween.dll</HintPath>
+    </Reference>
+    <Reference Include="NPOI.OpenXmlFormats">
+      <HintPath>Assets\Editor\NPOI.2.2.1\lib\net40\NPOI.OpenXmlFormats.dll</HintPath>
     </Reference>
     <Reference Include="DOTweenPro">
       <HintPath>Assets\Plugins\Demigiant\DOTweenPro\DOTweenPro.dll</HintPath>

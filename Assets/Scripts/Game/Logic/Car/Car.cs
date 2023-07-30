@@ -142,18 +142,18 @@ namespace DriftStorm
             //if (SpeedInput != 0)
             {
                 var force = transform.forward * _speedInput * 1000f;
-                _theRg.AddForce(force);
+                //_theRg.AddForce(force);
                 //DebugCtrl.Log($"{force.x} {force.y} {force.z}", Color.green);
                 //_theRg.velocity = transform.forward * _speedInput * 5f * Time.deltaTime;
 
-                //Quaternion turnAngle = Quaternion.AngleAxis(_turnInput * turnStrength, transform.up);
-                //Vector3 fwd = turnAngle * transform.forward;
+                Quaternion turnAngle = Quaternion.AngleAxis(_turnInput * turnStrength, transform.up);
+                Vector3 fwd = turnAngle * transform.forward;
 
-                //Vector3 newVelocity = transform.forward * _speedInput * 5f;
-                //newVelocity.y = _theRg.velocity.y;
-                //_theRg.velocity = newVelocity;
+                Vector3 newVelocity = _theRg.velocity + fwd * _speedInput * 5f * Time.fixedDeltaTime;
+                newVelocity.y = _theRg.velocity.y;
+                _theRg.velocity = newVelocity;
 
-                _theRg.AddTorque(transform.up * _turnInput * 5f * 1000f);
+                //_theRg.AddTorque(transform.up * _turnInput * 5f * 1000f);
 
                 //var angularVel = _theRg.angularVelocity;
 

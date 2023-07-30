@@ -1,0 +1,7 @@
+public class [CONFIGNAME][INDEX]
+{
+    public static Dictionary<[FIRSTFIELDTYPE], [CONFIGNAME_CONVERT]Class> data = new Dictionary<[FIRSTFIELDTYPE], [CONFIGNAME_CONVERT]Class>() 
+	{ 
+		[CONFIG_DATA]
+	};
+}

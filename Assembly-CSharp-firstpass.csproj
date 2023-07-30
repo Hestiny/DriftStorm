@@ -53,7 +53,7 @@
     <UnityVersion>2020.3.33f1</UnityVersion>
   </PropertyGroup>
   <ItemGroup>
-    <Analyzer Include="D:\Program\Microsoft\VS\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
+    <Analyzer Include="D:\Program\Microsoft\MicrosoftVisualStudio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\Plugins\Demigiant\DOTweenPro\DOTweenProShortcuts.cs" />
@@ -674,6 +674,9 @@
     <Reference Include="Unity.TextMeshPro">
       <HintPath>Library\ScriptAssemblies\Unity.TextMeshPro.dll</HintPath>
     </Reference>
+    <Reference Include="Unity.2D.Sprite.Editor">
+      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
+    </Reference>
     <Reference Include="UnityEditor.UI">
       <HintPath>Library\ScriptAssemblies\UnityEditor.UI.dll</HintPath>
     </Reference>
@@ -686,18 +689,15 @@
     <Reference Include="UnityEngine.UI">
       <HintPath>Library\ScriptAssemblies\UnityEngine.UI.dll</HintPath>
     </Reference>
-    <Reference Include="Unity.2D.Sprite.Editor">
-      <HintPath>Library\ScriptAssemblies\Unity.2D.Sprite.Editor.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="CustomToolbar.Editor.csproj">
-      <Project>{38E34E44-51E8-5D43-BAE9-16F2836F4AE7}</Project>
-      <Name>CustomToolbar.Editor</Name>
-    </ProjectReference>
     <ProjectReference Include="spine-unity.csproj">
       <Project>{C144315B-A0C8-41DE-DD15-B0BF0F8CFC0B}</Project>
       <Name>spine-unity</Name>
+    </ProjectReference>
+    <ProjectReference Include="CustomToolbar.Editor.csproj">
+      <Project>{38E34E44-51E8-5D43-BAE9-16F2836F4AE7}</Project>
+      <Name>CustomToolbar.Editor</Name>
     </ProjectReference>
     <ProjectReference Include="spine-unity-editor.csproj">
       <Project>{5896DF1D-303E-BC0F-1E14-B67C20A66087}</Project>
