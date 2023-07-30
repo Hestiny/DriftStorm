@@ -16,8 +16,6 @@ namespace Export
         const string ConfigClassTemplateFileAssetPath = "Assets/Editor/Export/ConfigClassTemplate.txt";//程序具体调用的配置类
         const string ConfigDefineClassTemplateFileAssetPath = "Assets/Editor/Export/ConfigDefineClassTemplate.txt";//每行数据定义的类
         const string ConfigDataTemplateFileAssetPath = "Assets/Editor/Export/ConfigDataTemplate.txt";//初始化数据到配置类的类
-        const string configTableFormatFileAssetPath = "Assets/Editor/Export/ConfigTable.txt";
-        const string configSubTableFormatFileAssetPath = "Assets/Editor/Export/ConfigSubTable.txt";
         const string skipFieldMarkPrefix = "#";
         static string excelDirFullPath = Application.dataPath.Replace("Assets", "Excel");
         static string exportDirPath = Application.dataPath + "/Scripts/Data/";
@@ -192,8 +190,8 @@ namespace Export
 
         static void ParseExcelToCS(List<List<object>> totalRowInfoList, string tableName, string saveFileName, string exportDirPath)
         {
-            TextAsset formatContent = (TextAsset)AssetDatabase.LoadAssetAtPath(configTableFormatFileAssetPath, typeof(TextAsset));
-            TextAsset exSubContent = (TextAsset)AssetDatabase.LoadAssetAtPath(configSubTableFormatFileAssetPath, typeof(TextAsset));
+            TextAsset formatContent = (TextAsset)AssetDatabase.LoadAssetAtPath(ConfigDefineClassTemplateFileAssetPath, typeof(TextAsset));
+            TextAsset exSubContent = (TextAsset)AssetDatabase.LoadAssetAtPath(ConfigDataTemplateFileAssetPath, typeof(TextAsset));
             if (!exportDirPath.EndsWith("/"))
                 exportDirPath += "/";
             string saveFullPath = exportDirPath + saveFileName + ".cs";

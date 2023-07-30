@@ -10823,3 +10823,6 @@ Assembly-CSharp.csproj
 Library/
 Temp/
 Drift Storm.sln
+Assembly-CSharp-Editor.csproj
+.vs/Drift Storm/FileContentIndex/3c7a9ba8-3515-4492-96ee-1996a318fc97.vsidx
+.vs/
